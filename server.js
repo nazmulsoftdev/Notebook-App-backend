@@ -20,7 +20,7 @@ app.use(router);
 
 app.use(routerBook);
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.SERVER_PORT || 4000;
 app.listen(PORT, () => {
     console.log("Express server is Active !");
 });
